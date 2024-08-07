@@ -1,10 +1,10 @@
 import { IoCall, IoPerson } from "react-icons/io5"
 import css from "./Contact.module.css"
 import { useDispatch } from "react-redux"
-import { deleteContact } from "../../redux/contactsSlice"
+import { deleteContact } from "../../redux/contactsOps"
 const Contact = ({ contact}) => {
     const dispatch = useDispatch();
-    const handleDelete = ()=> dispatch(deleteContact(contact.id))
+    const handleDelete = () => dispatch(deleteContact(contact.id))
     return (
         <div className={css.mainContainerContact}>
             <div>
